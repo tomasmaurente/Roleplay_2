@@ -1,13 +1,18 @@
+using Interfaces;
+
 namespace RoleplayGame
 {
-    public class Armor
+    public class Armor : IWeapons
     {
-        public int DefenseValue
+        public int GetAttackValue()
         {
-            get
-            {
-                return 25;
-            }
+            return 0;
+        }
+
+        private int defenseValue = 25;
+        public int GetDefenseValue()
+        {
+            return defenseValue;
         }
     }
 }

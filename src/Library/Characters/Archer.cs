@@ -19,7 +19,7 @@ namespace RoleplayGame
         {
             get
             {
-                return Bow.AttackValue;
+                return Bow.GetAttackValue();
             }
         }
 
@@ -27,7 +27,7 @@ namespace RoleplayGame
         {
             get
             {
-                return Helmet.DefenseValue;
+                return Helmet.GetDefenseValue();
             }
         }
 
