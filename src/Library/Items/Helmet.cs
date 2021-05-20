@@ -1,13 +1,19 @@
+using Interfaces;
+
 namespace RoleplayGame
 {
-    public class Helmet
+    public class Helmet : IWeapons
     {
-        public int DefenseValue
+        public int GetAttackValue()
         {
-            get
-            {
-                return 18;
-            }
+            return 0;
+        }
+
+        public int defenseValue = 18;
+        
+        public int GetDefenseValue()
+        {
+            return defenseValue;
         }
     }
 }

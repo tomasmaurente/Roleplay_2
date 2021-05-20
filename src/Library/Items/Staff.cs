@@ -1,21 +1,21 @@
+using Interfaces;
+
 namespace RoleplayGame
 {
-    public class Staff
+    public class Staff : IWeapons
     {
-        public int AttackValue 
+        private int attackValue = 100;
+        
+        public int GetAttackValue()
         {
-            get
-            {
-                return 100;
-            } 
+            return attackValue;
         }
 
-        public int DefenseValue
+        private int defenseValue = 100;
+        
+        public int GetDefenseValue()
         {
-            get
-            {
-                return 100;
-            }
+            return defenseValue;
         }
     }
 }

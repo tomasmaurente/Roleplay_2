@@ -1,21 +1,19 @@
+using Interfaces;
+
 namespace RoleplayGame
 {
-    public class Spell
+    public class Spell : IWeapons
     {
-        public int AttackValue
+        private int attackValue = 70;
+        public int GetAttackValue()
         {
-            get
-            {
-                return 70;
-            }
+            return attackValue;
         }
-
-        public int DefenseValue
+        
+        private int defenseValue = 70;
+        public int GetDefenseValue()
         {
-            get
-            {
-                return 70;
-            }
+            return defenseValue;
         }
     }
 }
