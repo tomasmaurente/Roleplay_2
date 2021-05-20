@@ -1,6 +1,8 @@
+using Interfaces;
+
 namespace RoleplayGame
 {
-    public class Archer
+    public class Archer : ICharacter
     {
         private int health = 100;
 

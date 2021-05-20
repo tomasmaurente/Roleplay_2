@@ -1,6 +1,8 @@
+using Interfaces;
+
 namespace RoleplayGame
 {
-    public class Dwarf
+    public class Dwarf : ICharacter
     {
         private int health = 100;
 
