@@ -23,7 +23,7 @@ namespace RoleplayGame
         {
             get
             {
-                return Axe.AttackValue;
+                return Axe.GetAttackValue();
             }
         }
 
@@ -31,7 +31,7 @@ namespace RoleplayGame
         {
             get
             {
-                return Shield.DefenseValue + Helmet.DefenseValue;
+                return Shield.GetDefenseValue() + Helmet.GetDefenseValue();
             }
         }
 
@@ -58,6 +58,21 @@ namespace RoleplayGame
         public void Cure()
         {
             this.Health = 100;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
         }
     }
 }

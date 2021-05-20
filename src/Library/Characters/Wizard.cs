@@ -21,7 +21,7 @@ namespace RoleplayGame
         {
             get
             {
-                return SpellsBook.AttackValue + Staff.AttackValue;
+                return SpellsBook.GetAttackValue() + Staff.GetAttackValue();
             }
         }
 
@@ -29,7 +29,7 @@ namespace RoleplayGame
         {
             get
             {
-                return SpellsBook.DefenseValue + Staff.DefenseValue;
+                return SpellsBook.GetDefenseValue() + Staff.GetDefenseValue();
             }
         }
 

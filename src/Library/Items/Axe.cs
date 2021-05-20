@@ -1,13 +1,19 @@
+using Interfaces;
+
 namespace RoleplayGame
 {
-    public class Axe
+    public class Axe : IWeapons
     {
-        public int AttackValue 
+        private int attackValue = 25;
+
+        public int GetAttackValue()
         {
-            get
-            {
-                return 25;
-            } 
+            return attackValue;
+        }
+
+        public int GetDefenseValue()
+        {
+            return 0;
         }
     }
 }

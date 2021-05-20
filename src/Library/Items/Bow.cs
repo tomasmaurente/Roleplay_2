@@ -1,13 +1,19 @@
-namespace RoleplayGame
+using Interfaces;
+
+namespace RoleplayGame 
 {
-    public class Bow
+    public class Bow : IWeapons
     {
-        public int AttackValue 
+        private int attackValue = 30;
+
+        public int GetAttackValue()
         {
-            get
-            {
-                return 15;
-            } 
+            return attackValue;
+        }
+
+        public int GetDefenseValue()
+        {
+            return 0;
         }
     }
 }

@@ -1,35 +1,29 @@
-using System.Collections.Generic;
+using Interfaces;
 
 namespace RoleplayGame
 {
-    public class SpellsBook
+    public class SpellsBook : IWeapons
     {
         public Spell[] Spells { get; set; }
-        
-        public int AttackValue
+
+        public int GetAttackValue()
         {
-            get
+            int value = 0;
+            foreach (Spell spell in this.Spells)
             {
-                int value = 0;
-                foreach (Spell spell in this.Spells)
-                {
-                    value += spell.AttackValue;
-                }
-                return value;
+                value += spell.GetAttackValue();
             }
+            return value;
         }
 
-        public int DefenseValue
+        public int GetDefenseValue()
         {
-            get
+            int value = 0;
+            foreach (Spell spell in this.Spells)
             {
-                int value = 0;
-                foreach (Spell spell in this.Spells)
-                {
-                    value += spell.DefenseValue;
-                }
-                return value;
+                value += spell.GetDefenseValue();
             }
+            return value;
         }
     }
 }
